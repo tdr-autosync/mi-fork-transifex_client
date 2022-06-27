@@ -12,7 +12,7 @@ def get_file_content(filename):
 
 
 setup(
-    name="transifex-client",
+    name="autosync-transifex-client",
     version=txclib.__version__,
     entry_points={"console_scripts": ["tx=txclib.cmdline:main"]},
     description="A command line interface for Transifex",
@@ -24,7 +24,7 @@ setup(
     license="GPLv2",
     dependency_links=[],
     setup_requires=[],
-    python_requires=">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,<3.10",
+    python_requires=">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,<3.11",
     install_requires=get_file_content("requirements.txt").splitlines(),
     tests_require=["mock>=3.0.5,<4.0"],
     data_files=[],
